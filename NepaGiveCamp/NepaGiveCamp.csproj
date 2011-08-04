@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B67CD6B-951F-4F90-AD81-A8DE1797A372}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NepaGiveCamp</RootNamespace>
+    <AssemblyName>NepaGiveCamp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Utility.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CharityController.cs" />
+    <Compile Include="Controllers\ScheduleController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsArticleController.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\CharityRepository.cs" />
+    <Compile Include="Models\GiveCamp.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GiveCamp.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LookupRepository.cs" />
+    <Compile Include="Models\VolunteerRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\GiveCamp.mdf" />
+    <Content Include="App_Data\GiveCamp_log.ldf">
+      <DependentUpon>GiveCamp.mdf</DependentUpon>
+    </Content>
+    <Content Include="bin\URLRewriter.dll" />
+    <Content Include="Content\Images\blue_arrow_left_32.png" />
+    <Content Include="Content\Images\blue_arrow_right_32.png" />
+    <Content Include="Content\Images\button_bkg.png" />
+    <Content Include="Content\Images\dotnetvalley.png" />
+    <Content Include="Content\Images\f_body_bkg.png" />
+    <Content Include="Content\Images\f_body_bkg_btm.png" />
+    <Content Include="Content\Images\f_body_bkg_top.jpg" />
+    <Content Include="Content\Images\f_body_grad.png" />
+    <Content Include="Content\Images\f_dropoff_spacer.png" />
+    <Content Include="Content\Images\f_footer_bkg.png" />
+    <Content Include="Content\Images\f_mid_bkg_home.png" />
+    <Content Include="Content\Images\f_dropoff_bkg.png" />
+    <Content Include="Content\Images\f_top_bkg.jpg" />
+    <Content Include="Content\Images\menu_arrow.png" />
+    <Content Include="Content\Images\menu_blank.png" />
+    <Content Include="Content\Images\nepagivecamp_logo_home.jpg" />
+    <Content Include="Content\Images\page_white_acrobat.png" />
+    <Content Include="Content\Images\Partners\cisco.gif" />
+    <Content Include="Content\Images\Partners\cocacola.gif" />
+    <Content Include="Content\Images\Partners\ComponentOne.gif" />
+    <Content Include="Content\Images\Partners\DevExpress.gif" />
+    <Content Include="Content\Images\Partners\DiscountAspNet.gif" />
+    <Content Include="Content\Images\Partners\dominos.gif" />
+    <Content Include="Content\Images\Partners\fireandice.jpg" />
+    <Content Include="Content\Images\Partners\GMCR.gif" />
+    <Content Include="Content\Images\Partners\Infragistics.gif" />
+    <Content Include="Content\Images\Partners\Kentico.gif" />
+    <Content Include="Content\Images\Partners\Microsoft.gif" />
+    <Content Include="Content\Images\Partners\MisericordiaUniversity.gif" />
+    <Content Include="Content\Images\Partners\NewHorizons.jpg" />
+    <Content Include="Content\Images\Partners\pluralsight.gif" />
+    <Content Include="Content\Images\Partners\TechSmith.gif" />
+    <Content Include="Content\Images\Partners\verizonwireless.gif" />
+    <Content Include="Content\Images\Partners\xSQL.gif" />
+    <Content Include="Content\Images\TwitterBird.png" />
+    <Content Include="Content\Images\WhatIsNEPAGiveCamp.png" />
+    <Content Include="Content\Scripts\jquery.jcarousellite_1.0.1.min.js" />
+    <Content Include="Content\Scripts\jquery.Faq.js" />
+    <Content Include="Content\Scripts\jquery.Tweetable.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Charity\Proposal.aspx" />
+    <Content Include="Views\Charity\ThankYou.aspx" />
+    <Content Include="Views\Charity\Landing.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Contact.aspx" />
+    <Content Include="Views\Home\FAQs-EventStaff.aspx" />
+    <Content Include="Views\Home\FAQs-Sponsors.aspx" />
+    <Content Include="Views\Home\FAQs-Developers.aspx" />
+    <Content Include="Views\Home\FAQs-Charities.aspx" />
+    <Content Include="Views\Home\FAQs.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\News.aspx" />
+    <Content Include="Views\Home\Sponsor.aspx" />
+    <Content Include="Views\NewsArticle\Edit.aspx" />
+    <Content Include="Views\NewsArticle\Index.aspx" />
+    <Content Include="Views\NewsArticle\New.aspx" />
+    <Content Include="Views\Schedule\Index.aspx" />
+    <Content Include="Views\Volunteer\Confirm.aspx" />
+    <Content Include="Views\Volunteer\Landing.aspx" />
+    <Content Include="Views\Volunteer\SignUp.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\Scripts\jquery-1.4.1.js" />
+    <Content Include="Content\Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Content\Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery.validate.js" />
+    <Content Include="Content\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\MicrosoftAjax.js" />
+    <Content Include="Content\Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Helpers\CheckBoxListHelper.cs" />
+    <Content Include="Download\Announcement.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Download\Prospectus.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Models\GiveCamp.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>GiveCamp.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\GiveCamp.dbml.layout">
+      <DependentUpon>GiveCamp.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1204</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

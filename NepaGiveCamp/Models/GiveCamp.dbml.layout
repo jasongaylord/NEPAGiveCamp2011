@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 13.625" name="GiveCamp">
+  <DataContextMoniker Name="/GiveCampDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a2b5ee06-7183-4ca2-a2d0-5af0be96cc2d" absoluteBounds="3.5, 11.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/GiveCampDataContext/CharityRequirement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6eb2026c-cf03-4707-a1bf-882ddce11dd0" absoluteBounds="3.515, 11.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0d09ee5-c592-4ce2-917d-9ac9087abb52" absoluteBounds="6.25, 2.75, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/GiveCampDataContext/VolunteerTechnology" />
+      <nestedChildShapes>
+        <elementListCompartment Id="772e7f7b-0175-45e9-8e77-2d25205f559b" absoluteBounds="6.265, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bbba2c2-3be1-46d2-8133-09bc6df8ef5d" absoluteBounds="6.25, 8.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/GiveCampDataContext/CharityRequirementSupportSkill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05cc2fb8-1f3e-477c-8685-bdca74ca352d" absoluteBounds="6.265, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0bd6587-95c3-4f06-b7fe-893a8cd9f2c2" absoluteBounds="6.25, 6.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/GiveCampDataContext/CharityRequirementTechnologiesUsed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8e0f81d-c50e-481e-bb1b-07fe8194236c" absoluteBounds="6.265, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bbbeb011-6bba-4c02-9837-be0fbfcc6771" absoluteBounds="0.5, 2, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/GiveCampDataContext/ExperienceLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37c0ec85-3cc8-4c2b-94e8-9e0ff6ff002d" absoluteBounds="0.515, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b2992c0-d688-42fe-8707-3c4868381485" absoluteBounds="3.5, 6.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/GiveCampDataContext/JobRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c52d2e15-fcb5-4afa-85d8-6522d906d104" absoluteBounds="3.515, 6.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="518ac98a-0543-4e12-bb18-4c9f288cd321" absoluteBounds="8.75, 1.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/GiveCampDataContext/NewsArticle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43ce7ad6-41bb-4862-8999-04b5bb075755" absoluteBounds="8.765, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88301078-6312-4174-835b-fa96367166b8" absoluteBounds="3.5, 8.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/GiveCampDataContext/Technology" />
+      <nestedChildShapes>
+        <elementListCompartment Id="189968c1-6f3a-4453-8137-e2fa2ed07469" absoluteBounds="3.515, 9.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="732893c7-6edd-49f8-9e4c-25772016cf2f" absoluteBounds="6.25, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/GiveCampDataContext/VolunteerJobRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5a15a26-0ffe-4a3d-b9f3-459a612ab19f" absoluteBounds="6.265, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 12.3565991210938); (7.25 : 12.3565991210938); (7.25 : 9.94399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GiveCampDataContext/CharityRequirement/CharityRequirement_CharityRequirementSupportSkill" />
+      <nodes>
+        <classShapeMoniker Id="a2b5ee06-7183-4ca2-a2d0-5af0be96cc2d" />
+        <classShapeMoniker Id="2bbba2c2-3be1-46d2-8133-09bc6df8ef5d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.375); (5.875 : 11); (5.875 : 7.34699625651042); (5.97916666666667 : 7.34699625651042 : JumpStart); (6.14583333333333 : 7.34699625651042 : JumpEnd); (6.25 : 7.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GiveCampDataContext/CharityRequirement/CharityRequirement_CharityRequirementTechnologiesUsed" />
+      <nodes>
+        <classShapeMoniker Id="a2b5ee06-7183-4ca2-a2d0-5af0be96cc2d" />
+        <classShapeMoniker Id="b0bd6587-95c3-4f06-b7fe-893a8cd9f2c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.47760602088341 : 8.625); (5.48499647199866 : 8.61760954888474 : JumpStart); (5.71517556509888 : 8.38743045578453 : JumpEnd); (6.0625 : 8.04010602088341); (6.0625 : 3.34699625651042); (6.25 : 3.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GiveCampDataContext/Technology/Technology_VolunteerTechnology" />
+      <nodes>
+        <classShapeMoniker Id="88301078-6312-4174-835b-fa96367166b8" />
+        <classShapeMoniker Id="a0d09ee5-c592-4ce2-917d-9ac9087abb52" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.34699625651042); (5.79166666666667 : 9.34699625651042 : JumpStart); (5.95833333333333 : 9.34699625651042 : JumpEnd); (6.25 : 9.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GiveCampDataContext/Technology/Technology_CharityRequirementSupportSkill" />
+      <nodes>
+        <classShapeMoniker Id="88301078-6312-4174-835b-fa96367166b8" />
+        <classShapeMoniker Id="2bbba2c2-3be1-46d2-8133-09bc6df8ef5d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.67938437785457); (5.65625 : 8.25); (5.65625 : 8.53774251302083); (6.25 : 7.94399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GiveCampDataContext/Technology/Technology_CharityRequirementTechnologiesUsed" />
+      <nodes>
+        <classShapeMoniker Id="88301078-6312-4174-835b-fa96367166b8" />
+        <classShapeMoniker Id="b0bd6587-95c3-4f06-b7fe-893a8cd9f2c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.21875 : 6.25); (5.21875 : 1.09375); (6.25 : 1.09375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GiveCampDataContext/JobRole/JobRole_VolunteerJobRole" />
+      <nodes>
+        <classShapeMoniker Id="4b2992c0-d688-42fe-8707-3c4868381485" />
+        <classShapeMoniker Id="732893c7-6edd-49f8-9e4c-25772016cf2f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e4eb3814-4cf1-4841-95a8-7e04de16aeb6" absoluteBounds="2.875, 1.5, 2, 4.2708154296875">
+      <DataClassMoniker Name="/GiveCampDataContext/Volunteer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a71febb-af1e-4148-a3d3-5379bf677e22" absoluteBounds="2.8899999999999997, 1.96, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.875 : 2.98599812825521); (5.13541666666667 : 2.98599812825521 : JumpStart); (5.30208333333333 : 2.98599812825521 : JumpEnd); (6.25 : 2.98599812825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GiveCampDataContext/Volunteer/Volunteer_VolunteerTechnology" />
+      <nodes>
+        <classShapeMoniker Id="e4eb3814-4cf1-4841-95a8-7e04de16aeb6" />
+        <classShapeMoniker Id="a0d09ee5-c592-4ce2-917d-9ac9087abb52" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.875 : 1.72199625651042); (5.13541666666667 : 1.72199625651042 : JumpStart); (5.30208333333333 : 1.72199625651042 : JumpEnd); (6.25 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GiveCampDataContext/Volunteer/Volunteer_VolunteerJobRole" />
+      <nodes>
+        <classShapeMoniker Id="e4eb3814-4cf1-4841-95a8-7e04de16aeb6" />
+        <classShapeMoniker Id="732893c7-6edd-49f8-9e4c-25772016cf2f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.69314697265625); (2.875 : 2.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GiveCampDataContext/ExperienceLevel/ExperienceLevel_Volunteer" />
+      <nodes>
+        <classShapeMoniker Id="bbbeb011-6bba-4c02-9837-be0fbfcc6771" />
+        <classShapeMoniker Id="e4eb3814-4cf1-4841-95a8-7e04de16aeb6" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

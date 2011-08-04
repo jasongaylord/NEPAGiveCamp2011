@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="../../Content/Scripts/jquery-1.4.1.min.js" type="text/javascript" language="javascript"></script>
+    <script src="../../Content/Scripts/jquery.jcarousellite_1.0.1.min.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".partners").jCarouselLite({
+                btnNext: ".partners_next",
+                btnPrev: ".partners_prev",
+                visible: 5,
+                auto: 3000,
+                speed: 1000
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="HeadScriptContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div class="f_main">
+    <div class="f_page">
+        <div class="f_logo"><a href="../../"><img src="../../Content/Images/nepagivecamp_logo_home.jpg" alt="NEPA GiveCamp" style="border: 0px;" /></a></div>
+        <div class="i_twitter"><a href="http://twitter.com/nepagivecamp" target="_blank"><img src="../../Content/Images/TwitterBird.png" alt="Visit us on Twitter" style="border: 0px;" /></a></div>
+        <div class="f_header">
+            <div class="f_menu">
+	            <ul>
+		            <li id="navHome"><a href="<%=Url.Action("Index","Home") %>"><div>Homepage</div></a></li>
+                    <li id="navSchedule"><a href="<%=Url.Action("Index","Schedule") %>"><div>Schedule</div></a></li>
+		            <li id="navVolunteer"><a href="<%=Url.Action("Index","Volunteer") %>"><div>Volunteer</div></a></li>
+		            <li id="navCharity"><a href="<%=Url.Action("Index","Charity") %>"><div>Charities</div></a></li>
+		            <li id="navSponsor"><a href="<%=Url.Action("Sponsor","Home") %>"><div>Sponsor</div></a></li>
+		            <li id="navFAQ"><a href="<%=Url.Action("FAQs","Home",new {id=""}) %>"><div>FAQ</div></a></li>
+		            <li id="navAbout"><a href="<%=Url.Action("About","Home")%>"><div>About</div></a></li>
+		            <li id="navContact"><a href="<%=Url.Action("Contact","Home") %>"><div>Contact</div></a></li>
+	            </ul>
+            </div>
+        </div>
+        <div class="f_mid_home">
+            <div class="i_whatisit">
+                <img src="../../Content/Images/WhatIsNEPAGiveCamp.png" alt="What is the NEPA GiveCamp?" />
+            </div>
+        </div>
+        <div class="f_body_frame">
+            <div class="f_body">
+                <div class="f_body_content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="f_dropoff">
+        <div class="f_dropoff_body">
+            <div class="f_body_ftr"></div>
+            <div class="f_body_btm"></div>
+            <div class="f_dropoff_content">
+                <div class="heading2">Our Partners</div>
+                <div class="partner_container">
+                    <button class="partners_prev"><img src="../../Content/Images/blue_arrow_left_32.png" alt="left" /></button>
+                    <div class="partners">
+	                    <ul>
+		                    <li><a href="http://www.microsoft.com" target="_blank"><img src="../../Content/Images/Partners/Microsoft.gif" alt="Microsoft" /></a></li>
+                            <li><a href="http://www.misericordia.edu" target="_blank"><img src="../../Content/Images/Partners/MisericordiaUniversity.gif" alt="Misericordia University" /></a></li>
+                            <li><a href="http://www.discountasp.net" target="_blank"><img src="../../Content/Images/Partners/DiscountAspNet.gif" alt="DiscountASP.net" /></a></li>
+                            <li><a href="http://www.gmcr.com" target="_blank"><img src="../../Content/Images/Partners/GMCR.gif" alt="Green Mountain Coffee Roasters" /></a></li>
+                            <li><a href="http://www.techsmith.com" target="_blank"><img src="../../Content/Images/Partners/techsmith.gif" alt="TechSmith" /></a></li>
+                            <li><a href="http://www.pluralsight.com" target="_blank"><img src="../../Content/Images/Partners/pluralsight.gif" alt="Pluralsight" /></a></li>
+                            <li><a href="http://www.devexpress.com" target="_blank"><img src="../../Content/Images/Partners/devexpress.gif" alt="DevExpress" /></a></li>
+                            <li><a href="http://www.dominos.com" target="_blank"><img src="../../Content/Images/Partners/dominos.gif" alt="Domino's Pizza" /></a></li>
+                            <li><a href="http://fireandiceontobycreek.com" target="_blank"><img src="../../Content/Images/Partners/FireandIce.jpg" alt="Fire and Ice on Toby's Creek" /></a></li>
+                            <li><a href="http://www.infragistics.com" target="_blank"><img src="../../Content/Images/Partners/Infragistics.gif" alt="Infragistics" /></a></li>
+                            <li><a href="http://www.thecoca-colacompany.com/" target="_blank"><img src="../../Content/Images/Partners/CocaCola.gif" alt="Coca-Cola" /></a></li>
+                            <li><a href="http://www.verizonwireless.com" target="_blank"><img src="../../Content/Images/Partners/VerizonWireless.gif" alt="Verizon Wireless" /></a></li>
+                            <li><a href="http://www.cisco.com" target="_blank"><img src="../../Content/Images/Partners/Cisco.gif" alt="Cisco" /></a></li>
+                            <li><a href="http://www.nhnepa.com.com" target="_blank"><img src="../../Content/Images/Partners/NewHorizons.jpg" alt="Component One" /></a></li>
+                            <li><a href="http://www.xSQL.com" target="_blank"><img src="../../Content/Images/Partners/xSQL.gif" alt="xSQL" /></a></li>
+                            <li><a href="http://www.Kentico.com" target="_blank"><img src="../../Content/Images/Partners/Kentico.gif" alt="Kentico" /></a></li>
+                            <li><a href="http://www.ComponentOne.com" target="_blank"><img src="../../Content/Images/Partners/ComponentOne.gif" alt="Component One" /></a></li>
+	                    </ul>
+                    </div>
+                    <button class="partners_next"><img src="../../Content/Images/blue_arrow_right_32.png" alt="left" /></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="f_footer">
+        <div class="f_footer_body">
+            <div class="f_footer_content">
+                <span>a&nbsp;&nbsp;</span>
+                <img src="../../Content/Images/dotnetvalley.png" alt=".NET Valley" style="border: 0px;" />
+                <span>&nbsp;&nbsp;event</span><br /><br />
+                &copy; 2010-2011 .NET Valley. All rights reserved.<br />
+                <% Html.RenderPartial("LogOnUserControl"); %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
